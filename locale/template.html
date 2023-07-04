@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reporte de balance</title>
+</head>
+<body>
+	<h1>Reporte de balance</h1>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Fecha</th>
+			<th>Agencia</th>
+		</tr>
+		{{range .}}
+		<tr>
+			<td>{{.ID}}</td>
+			<td>{{.Date}}</td>
+			<td>{{.Agency}}</td>
+		</tr>
+		{{end}}
+	</table>
+</body>
+</html>
