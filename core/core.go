@@ -15,7 +15,7 @@ func ExtractEmail(str string) string {
 	left := strings.Index(str, "<")
 	right := strings.LastIndex(str, ">")
 	if left == -1 || right == -1 {
-		fmt.Println("Cadena inválida")
+		// fmt.Println("Cadena inválida")
 		return ""
 	}
 	return string(str[left+1 : right])
